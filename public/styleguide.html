@@ -23,268 +23,141 @@
     
 
     
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+
+
     <!-- Main Theme CSS styles -->
     <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+
     <!-- Font linked from external Google Fonts resource -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700,800&display=swap" rel="stylesheet">
 
 
 </head>
-<body data-smooth-scroll-offset="30">
+<body data-smooth-scroll-offset="30" class="Site">
     <!-- Main Nav Bar -->
 
     
 
-
     
-    <div class="navbar-container">
-    <nav class="navbar navbar-expand-lg navbar-light" data-sticky="top">
-        <div class="container">
-            <a class="navbar-brand navbar-brand-dynamic-color fade-page" href="index.html">
-                <img alt="Jumpstart" data-inject-svg src="img/logos/jumpstart.svg">
-            </a>
-            <div class="d-flex align-items-center order-lg-3">
-                <a href="#" class="btn btn-primary ml-lg-4 mr-3 mr-md-4 mr-lg-0 d-none d-sm-block order-lg-3">Purchase
-                    Now</a>
-                <button aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
-                    data-target=".navbar-collapse" data-toggle="collapse" type="button">
-                    <img alt="Navbar Toggler Open Icon" class="navbar-toggler-open icon icon-sm" data-inject-svg
-                        src="img/icons/interface/icon-menu.svg">
-                    <img alt="Navbar Toggler Close Icon" class="navbar-toggler-close icon icon-sm" data-inject-svg
-                        src="img/icons/interface/icon-x.svg">
-                </button>
-            </div>
-            <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-lg-end" id="navigation-menu">
-                <ul class="navbar-nav my-3 my-lg-0">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a aria-expanded="false" aria-haspopup="true"
-                                class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid"
-                                href="#" role="button">Demos</a>
-                            <div class="row dropdown-menu">
-                                <div class="col-auto" data-dropdown-content>
-                                    <div class="dropdown-grid-menu"><a href="index.html"
-                                            class="dropdown-item fade-page">Overview</a><a href="landing-1.html"
-                                            class="dropdown-item fade-page">Landing 1</a><a href="landing-2.html"
-                                            class="dropdown-item fade-page">Landing 2</a><a href="landing-3.html"
-                                            class="dropdown-item fade-page">Landing 3</a><a href="landing-4.html"
-                                            class="dropdown-item fade-page">Landing 4</a><a href="landing-5.html"
-                                            class="dropdown-item fade-page">Landing 5</a><a href="landing-6.html"
-                                            class="dropdown-item fade-page">Landing 6</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a aria-expanded="false" aria-haspopup="true"
-                                class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid"
-                                href="#" role="button">Pages</a>
-                            <div class="row dropdown-menu">
-                                <div class="col-auto" data-dropdown-content>
-                                    <div class="dropdown-grid-menu">
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Company</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="company-about-1.html"
-                                                            class="dropdown-item fade-page">About 1</a><a
-                                                            href="company-about-2.html"
-                                                            class="dropdown-item fade-page">About 2</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Blog</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="blog-listing-1.html"
-                                                            class="dropdown-item fade-page">Blog Listing 1</a><a
-                                                            href="blog-listing-2.html"
-                                                            class="dropdown-item fade-page">Blog Listing 2</a><a
-                                                            href="blog-listing-3.html"
-                                                            class="dropdown-item fade-page">Blog Listing 3</a>
-                                                        <a href="blog-article.html" class="dropdown-item fade-page">Blog
-                                                            Article</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Help Center</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="help-center-home.html"
-                                                            class="dropdown-item fade-page">Help Center Home</a><a
-                                                            href="help-center-category.html"
-                                                            class="dropdown-item fade-page">Help Center Category</a><a
-                                                            href="help-center-article.html"
-                                                            class="dropdown-item fade-page">Help Center Article</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+    <!-- Header -->
+<header class="header Site-header">
+  <nav class="navbar navbar-expand-lg header-nav">
+    <div class="navbar-header">
+      <a id="mobile_btn" href="javascript:void(0);">
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <a href="index.html" class="navbar-brand logo">
+        <img src="http://benhvienkhuvucthuduc.vn/Content/assets/img/logo.png" class="img-fluid" alt="Logo">
+      </a>
+    </div>
+    <div class="main-menu-wrapper">
+      <div class="menu-header">
+        <a href="index.html" class="menu-logo">
+          <img src="img/logo.png" class="img-fluid" alt="Logo">
+        </a>
+        <a id="menu_close" class="menu-close" href="javascript:void(0);">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="main-nav">
+        <li>
+          <a href="index.html">Trang chủ</a>
+        </li>
+<!-- 
+        <li>
+          <a href="index.html">Giới thiệu</a>
+        </li> -->
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Careers</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="careers-1.html"
-                                                            class="dropdown-item fade-page">Careers 1</a><a
-                                                            href="careers-2.html"
-                                                            class="dropdown-item fade-page">Careers 2</a><a
-                                                            href="career-single.html"
-                                                            class="dropdown-item fade-page">Career Single</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Case Studies</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="case-studies.html"
-                                                            class="dropdown-item fade-page">Case Studies</a><a
-                                                            href="case-study-single.html"
-                                                            class="dropdown-item fade-page">Case Study Single</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+        <li>
+          <a href="thongtinbacsi.html">Thông tin Bác sĩ</a>
+        </li>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Pricing</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="pricing-plans.html"
-                                                            class="dropdown-item fade-page">Pricing Plans</a><a
-                                                            href="pricing-table.html"
-                                                            class="dropdown-item fade-page">Pricing Table</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Contact</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="contact.html"
-                                                            class="dropdown-item fade-page">Contact</a><a
-                                                            href="contact-map.html"
-                                                            class="dropdown-item fade-page">Contact Map</a><a
-                                                            href="contact-planner.html"
-                                                            class="dropdown-item fade-page">Contact Planner</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Account</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a href="account-settings.html"
-                                                            class="dropdown-item fade-page">Account Settings</a><a
-                                                            href="account-invoice.html"
-                                                            class="dropdown-item fade-page">Invoice</a><a
-                                                            href="account-sign-up-cover.html"
-                                                            class="dropdown-item fade-page">Sign Up - Cover</a>
-                                                        <a href="account-sign-in-cover.html"
-                                                            class="dropdown-item fade-page">Sign In - Cover</a><a
-                                                            href="account-sign-up-simple.html"
-                                                            class="dropdown-item fade-page">Sign Up -
-                                                            Simple</a><a href="account-sign-in-simple.html"
-                                                            class="dropdown-item fade-page">Sign In
-                                                            - Simple</a><a href="account-forgot-password.html"
-                                                            class="dropdown-item fade-page">Forgot Password</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="dropdown">
-                                            <a aria-expanded="false" aria-haspopup="true" class="dropdown-item"
-                                                data-toggle="dropdown-grid" href="#" role="button">Utility</a>
-                                            <div class="row dropdown-menu">
-                                                <div class="col-auto" data-dropdown-content>
-                                                    <div class="dropdown-grid-menu"><a
-                                                            href="utility-coming-soon-subscribe.html"
-                                                            class="dropdown-item fade-page">Coming Soon Subscribe</a><a
-                                                            href="utility-coming-soon-countdown.html"
-                                                            class="dropdown-item fade-page">Coming Soon
-                                                            Countdown</a><a href="utility-coming-soon-social.html"
-                                                            class="dropdown-item fade-page">Coming Soon Social</a><a
-                                                            href="utility-legal-terms.html"
-                                                            class="dropdown-item fade-page">Legal Terms</a><a
-                                                            href="404.html" class="dropdown-item fade-page">404</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a aria-expanded="false" aria-haspopup="true"
-                                class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid"
-                                href="#" role="button">Features</a>
-                            <div class="row dropdown-menu">
-                                <div class="col-auto" data-dropdown-content>
-                                    <div class="dropdown-grid-menu"><a href="style-guide.html"
-                                            class="dropdown-item fade-page">Style
-                                            Guide</a><a href="plugins.html"
-                                            class="dropdown-item fade-page">Plugins</a><a href="navigation-bars.html"
-                                            class="dropdown-item fade-page">Navigation Bars</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <a aria-expanded="false" aria-haspopup="true"
-                                class="dropdown-toggle nav-link nav-item arrow-bottom" data-toggle="dropdown-grid"
-                                href="#" role="button">Support</a>
-                            <div class="row dropdown-menu">
-                                <div class="col-auto" data-dropdown-content>
-                                    <div class="dropdown-grid-menu"><a href="documentation/index.html"
-                                            class="dropdown-item" target="_blank">Documentation</a><a
-                                            href="documentation/changelog.html" class="dropdown-item"
-                                            target="_blank">Changelog</a><a href="https://mediumrare.ticksy.com/"
-                                            class="dropdown-item" target="_blank">Get Help</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <li class="has-submenu">
+          <a href="#">Dịch vụ<i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="doctor-dashboard.html">Hỏi Bác sĩ</a></li>
+            <li><a href="appointments.html">Xem kết quả xét nghiệm</a></li>
+            <li><a href="schedule-timings.html">Xem toa thuốc</a></li>
+            <li><a href="my-patients.html">Đặt lịch khám Bác sĩ</a></li>
+            <li><a href="patient-profile.html">Đóng tiền viện phí</a></li>
+          </ul>
+        </li>
+
+
+        <!-- <li class="login-link">
+          <a href="login.html">Login / Signup</a>
+        </li> -->
+      </ul>
+    </div>
+    <ul class="nav header-navbar-rht">
+      <li class="nav-item contact-item">
+        <div class="header-contact-img">
+          <i class="far fa-hospital"></i>
         </div>
-    </nav>
-</div>
-    
+        <div class="header-contact-detail">
+          <p class="contact-header">Liên hệ</p>
+          <p class="contact-info-header"> <a href="tel: (028) 3722 3556"> (028) 3722 3556</a>
+          </p>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-login" href="#" data-toggle="modal" data-target="#modal-login">Đăng nhập </a>
+      </li>
+
+      <!-- User Menu -->
+      <li class="nav-item dropdown has-arrow logged-item">
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+          <span class="user-img">
+            <img class="rounded-circle" src="img/doctors/doctor-thumb-02.jpg" width="31" alt="Darren Elder">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <div class="user-header">
+            <div class="avatar avatar-sm">
+              <img src="img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+            </div>
+
+            <div class="user-text">
+              <div><strong>Nguyễn Văn A</strong></div>
+              <p class="text-muted mb-0">Bác sĩ</p>
+            </div>
+          </div>
+          <a class="dropdown-item" href="doctor-dashboard.html">Quản lý</a>
+          <a class="dropdown-item" href="doctor-profile-settings.html">Tùy chọn</a>
+          <a class="dropdown-item" href="login.html">Thoát</a>
+        </div>
+      </li>
+      <!-- /User Menu -->
+    </ul>
+  </nav>
+</header>
+<!-- /Header -->
 
 
-    <!-- Main Body Content -->
     
+
+    <!-- Main Wrapper -->
+    <div class="Site-content">
+        <!-- Main Body Content -->
+        
 
 
 
@@ -2714,188 +2587,83 @@
 
 
 
+    </div>
+
+    <div class="Site-footer">
+        <!-- Footer -->
+
+        
 
 
-    <!-- Footer -->
+        
 
-    
-    <footer class="bg-primary-3 text-white links-white pb-4 footer-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-auto mr-xl-5 col-md-3 mb-4 mb-md-0">
-                <h5>Demos</h5>
-                <ul class="nav flex-row flex-md-column">
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-1.html" class="nav-link fade-page px-0 py-2">Landing 1</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-2.html" class="nav-link fade-page px-0 py-2">Landing 2</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-3.html" class="nav-link fade-page px-0 py-2">Landing 3</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-4.html" class="nav-link fade-page px-0 py-2">Landing 4</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-5.html" class="nav-link fade-page px-0 py-2">Landing 5</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="landing-6.html" class="nav-link fade-page px-0 py-2">Landing 6</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xl-auto mr-xl-5 col-md-3">
-                <h5>Pages</h5>
-                <ul class="nav flex-row flex-md-column">
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="company-about-1.html" class="nav-link fade-page px-0 py-2">Company</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="blog-listing-1.html" class="nav-link fade-page px-0 py-2">Blog</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="help-center-home.html" class="nav-link fade-page px-0 py-2">Help Center</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="careers-1.html" class="nav-link fade-page px-0 py-2">Careers</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="case-studies.html" class="nav-link fade-page px-0 py-2">Case Studies</a>
-                    </li>
-                    <li class="nav-item mr-3 mr-md-0">
-                        <a href="pricing-plans.html" class="nav-link fade-page px-0 py-2">Pricing</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col mt-4 mt-md-0 mt-lg-5 mt-xl-0 order-lg-4 order-xl-3">
-                <h5>Articles</h5>
-                <ul class="list-unstyled d-flex flex-wrap">
-                    <li class="col-12 col-lg-6 col-xl-12 px-0">
-                        <div class="row my-2 my-md-3">
-                            <a class="col-5" href="#">
-                                <img class="rounded img-fluid hover-fade-out" src="img/blog/thumb-2.jpg"
-                                    alt="blog.1.image">
-                            </a>
-                            <div class="col">
-                                <a class="h6" href="#">Introducing the new Jumpstart brand</a>
-                                <div class="text-small text-muted mt-2">October 10th</div>
+
+        <!-- "Back to top" button -->
+
+        
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Modal -->
+<div class="modal fade   " id="modal-login" tabindex="-1" role="dialog" aria-labelledby="demoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg  " role="document">
+        <div class="modal-content">
+
+            <div class="container-fluid">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-6 bg-img rounded-left m-h-60 d-none d-sm-block"
+                        style="background-image: url('http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/NoiKhoa.jpg')">
+
+                    </div>
+                    <div class="col-md-6 py-5 px-sm-5 my-auto ">
+
+                        <h3 class="pt-sm-3 mb-5">Đăng nhập hệ thống</h2>
+                        <!-- <p class="text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p> -->
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Tên đăng nhập</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Tên đăng nhập">
+
                             </div>
-                        </div>
-                    </li>
-                    <li class="col-12 col-lg-6 col-xl-12 px-0">
-                        <div class="row my-2 my-md-3">
-                            <a class="col-5" href="#">
-                                <img class="rounded img-fluid hover-fade-out" src="img/blog/thumb-1.jpg"
-                                    alt="blog.2.image">
-                            </a>
-                            <div class="col">
-                                <a class="h6" href="#">Making the most of team-building sessions</a>
-                                <div class="text-small text-muted mt-2">October 2nd</div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Mật khẩu</label>
+                                <input type="password" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Mật khẩu">
+
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg mt-2 mt-md-5 mt-lg-0 order-lg-3 order-xl-4">
-                <h5>Newsletter</h5>
-                <div class="card card-body bg-white">
-                    <p>Get a bi-weekly digest of great articles</p>
-                    <form data-form-email novalidate action="/forms/mailchimp.php">
-                        <div class="d-flex flex-column flex-sm-row form-group">
-                            <input class="form-control mr-sm-2 mb-2 mb-sm-0 w-auto flex-grow-1" name="email"
-                                placeholder="Email Address" type="email" required>
-                            <button type="submit" class="btn btn-primary btn-loading" data-loading-text="Sending">
-                                <!-- Icon for loading animation -->
-                                <svg class="icon bg-white" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <title>Icon For Loading</title>
-                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g>
-                                            <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
-                                        </g>
-                                        <path
-                                            d="M12,4 L12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,10.9603196 17.7360885,9.96126435 17.2402578,9.07513926 L18.9856052,8.09853149 C19.6473536,9.28117708 20,10.6161442 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z"
-                                            fill="#000000" fill-rule="nonzero"
-                                            transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) ">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <span>Go</span>
-                            </button>
-                        </div>
-                        <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible"
-                            data-badge="bottomleft"></div>
-                        <div class="d-none alert alert-success w-100" role="alert" data-success-message>
-                            Thanks, a member of our team will be in touch shortly.
-                        </div>
-                        <div class="d-none alert alert-danger w-100" role="alert" data-error-message>
-                            Please fill all fields correctly.
-                        </div>
-                        <div class="text-small text-muted">We'll never share your email address</div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <hr>
-            </div>
-        </div>
-        <div
-            class="row flex-column flex-lg-row align-items-center justify-content-center justify-content-lg-between text-center text-lg-left">
-            <div class="col-auto">
-                <div class="d-flex flex-column flex-sm-row align-items-center text-small">
-                    <div class="text-muted">&copy; 2019 Page protected by reCAPTCHA and subject to Google's <a
-                            href="https://www.google.com/policies/privacy/" target="_blank">Privacy Policy</a> and <a
-                            href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+
+                            <div class="form-check">
+                                <label>
+                                    <label class="form-check-label" for="RememberMe"><input class="form-check-input"
+                                            data-val="true"
+                                            data-val-required="The Ghi nhớ đăng nhập ? field is required."
+                                            id="RememberMe" name="RememberMe" type="checkbox" value="true"><input
+                                            name="RememberMe" type="hidden" value="false">Ghi nhớ đăng nhập ?</label>
+                                    <span class="field-validation-valid" data-valmsg-for="RememberMe"
+                                        data-valmsg-replace="true"></span>
+
+                                </label>
+
+
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block  mt-4" data-dismiss="modal"
+                                aria-label="Close">Đăng nhập</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="col-auto mt-3 mt-lg-0">
-                <ul class="list-unstyled d-flex mb-0">
-                    <li class="mx-3">
-                        <a href="#" class="hover-fade-out">
-                            <img src="img/icons/social/dribbble.svg" alt="Dribbble" class="icon icon-xs bg-white"
-                                data-inject-svg>
-                        </a>
-                    </li>
-                    <li class="mx-3">
-                        <a href="#" class="hover-fade-out">
-                            <img src="img/icons/social/twitter.svg" alt="Twitter" class="icon icon-xs bg-white"
-                                data-inject-svg>
-                        </a>
-                    </li>
-                    <li class="mx-3">
-                        <a href="#" class="hover-fade-out">
-                            <img src="img/icons/social/github.svg" alt="Github" class="icon icon-xs bg-white"
-                                data-inject-svg>
-                        </a>
-                    </li>
-                    <li class="mx-3">
-                        <a href="#" class="hover-fade-out">
-                            <img src="img/icons/social/facebook.svg" alt="Facebook" class="icon icon-xs bg-white"
-                                data-inject-svg>
-                        </a>
-                    </li>
-                    <li class="mx-3">
-                        <a href="#" class="hover-fade-out">
-                            <img src="img/icons/social/google.svg" alt="Google" class="icon icon-xs bg-white"
-                                data-inject-svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
-</footer>
-    
-
-
-    <!-- "Back to top" button -->
-
-    
-
+</div>
+<!-- Modal Ends -->
 
 
     <!-- Required vendor scripts (Do not remove) -->
@@ -2903,7 +2671,7 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script type="text/javascript" src="js/lazysizes.min.js"></script>
+    <!-- <script type="text/javascript" src="js/lazysizes.min.js"></script> -->
 
     <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
 
@@ -2951,6 +2719,15 @@
     <!-- <script type="text/javascript" src="js/custom.js"></script> -->
 
     <!-- Scripts -->
+    	<!-- Sticky Sidebar JS -->
+        <script src="plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script src="js/custom.js"></script>
+
     
 
     
@@ -2960,4 +2737,3 @@
     </body>
 
 </html>
-
