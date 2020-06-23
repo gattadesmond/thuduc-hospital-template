@@ -1,0 +1,233 @@
+{% import "macros/macros.html" as macros %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Describes the encoding of the page to the browser -->
+    <meta charset="utf-8">
+
+    <!-- Sets the title of the page.  Shown in the tab of your browser -->
+    <title>Desmond template</title>
+
+    <!-- Required for Bootstrap's responsive media queries to function -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tag for basic SEO -->
+    <meta name="description" content="Momo">
+
+    {% if preloader %}
+    <!-- Start Page Loader -->
+    <style>
+        @keyframes hideLoader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.loader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.loader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.loader {
+            animation: hideLoader .5s linear .5s forwards;
+        }
+
+        .loading-animation {
+            width: 40px;
+            height: 40px;
+            margin: 100px auto;
+            background-color: #2568ef;
+            border-radius: 100%;
+            animation: pulse 1s infinite ease-in-out
+        }
+
+        @keyframes pulse {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            100% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                opacity: 0
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        window.addEventListener("load", function () { document.querySelector('body').classList.add('loaded'); });
+    </script>
+    <!-- End loading animation -->
+    {% endif %}
+
+
+    {% block head %}
+
+    {% endblock %}
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+
+
+    <!-- Main Theme CSS styles -->
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+
+    <!-- Font linked from external Google Fonts resource -->
+
+
+</head>
+<body{{ ' class="page-boxed"' | safe if page_boxed }} data-smooth-scroll-offset="30" class="Site">
+    <!-- Main Nav Bar -->
+
+    {% if preloader %}
+    <!-- Start Loader -->
+    <div class="loader">
+        <div class="loading-animation"></div>
+    </div>
+    <!-- End Loader -->
+    {% endif %}
+
+    {% block header %}
+
+
+    {% include "layouts/header.html" %}
+
+
+    {% endblock %}
+
+    <!-- Main Wrapper -->
+    <div class="Site-content">
+        <!-- Main Body Content -->
+        {% block content %}
+
+
+        {% endblock %}
+    </div>
+
+    <div class="Site-footer">
+        <!-- Footer -->
+
+        {% block footer %}
+
+
+        {% endblock %}
+
+
+        <!-- "Back to top" button -->
+
+        {% if to_top %}
+        <a href="#top" class="btn btn-primary rounded-circle btn-back-to-top" data-smooth-scroll
+            data-smooth-scroll-offset="120px" data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true"
+            data-aos-once="false">
+            <img src="img/icons/interface/icon-arrow-up.svg" alt="Icon" class="icon bg-white" data-inject-svg>
+        </a>
+        {% endif %}
+    </div>
+    <!-- /Main Wrapper -->
+
+    {% include "layouts/modal.html" %}
+
+
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!-- <script type="text/javascript" src="js/lazysizes.min.js"></script> -->
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="js/aos.js"></script>
+
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+
+
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="js/flatpickr.min.js"></script>
+
+
+
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="js/plyr.polyfilled.min.js"></script>
+
+
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="js/scrollMonitor.js"></script>
+
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="js/svg-injector.umd.production.js"></script>
+
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="js/typed.min.js"></script>
+
+
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="js/theme.js"></script>
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquerypp.custom.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery.bookblock.js"></script> -->
+
+    <!-- <script type="text/javascript" src="js/custom.js"></script> -->
+
+    <!-- Scripts -->
+    	<!-- Sticky Sidebar JS -->
+        <script src="plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    {% block javascript %}
+
+    {% endblock %}
+
+
+
+    </body>
+
+</html>

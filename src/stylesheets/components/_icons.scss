@@ -1,0 +1,49 @@
+.icon {
+    flex-shrink: 0;
+    // width: auto;
+    // height: $spacer*2;
+    width: auto;
+    vertical-align: middle;
+    &.icon-xs {
+      height: $spacer;
+      path {
+        &[stroke] {
+          stroke-width: 3px;
+        }
+      }
+    }
+    &.icon-sm {
+      height: $spacer * 1.5;
+    }
+    &.icon-lg {
+      height: $spacer * 4.5;
+    }
+    &.icon-xl {
+      height: $spacer * 6;
+    }
+  }
+  
+  // @include media-breakpoint-up(md){
+  //     .icon{
+  //         height: $spacer*3;
+  //     }
+  // }
+  
+  .fill-current {
+    color: inherit;
+  }
+  
+  .svg-icon {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    width: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    //   fill: currentColor;
+    &.icon-md {
+      width: 1.2em;
+      height: 1.2em;
+    }
+  }
+  

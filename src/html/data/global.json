@@ -1,0 +1,76 @@
+{
+  "navigation": {
+    "index.html": {
+      "name": "Index"
+    },
+    "about.html": {
+      "name": "About"
+    },
+    "ui.html": {
+      "name": "UI Kit",
+      "sub": {
+        "modal.html": {
+          "name": "Modal"
+        },
+        "sweetalert.html": {
+          "name": "Sweet alert"
+        },
+        "form.html": {
+          "name": "Form element"
+        }
+      }
+    },
+    "ui2.html": {
+      "name": "UI Kit 2",
+      "sub": {
+        "modal2.html": {
+          "name": "Modal 2"
+        },
+        "sweetalert2.html": {
+          "name": "Sweet alert 2"
+        },
+        "form2.html": {
+          "name": "Form element 2"
+        }
+      }
+    }
+  },
+  "category" : [
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/NoiKhoa.jpg",
+      "name": "Hỏi Bác Sĩ Chuyên khoa",
+      "icon": "009-doctor",
+      "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
+      "link" : "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/healthcare_2.jpg",
+      "name": "Xem kết quả xét nghiệm",
+      "icon": "027-laboratory",
+      "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
+      "link" : "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/CanLamSang.jpg",
+      "name": "Xem toa thuốc",
+      "icon": "017-clipboard",
+      "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
+      "link" : "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/service/service_6.jpg",
+      "name": "Đặt lịch khám bác sĩ",
+      "icon": "037-quarantine",
+      "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
+      "link" : "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/service/service_3.jpg",
+      "name": "Đóng tiền viện phí",
+      "icon": "039-bill",
+      "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
+      "link" : "#"
+    }
+
+  ]
+}

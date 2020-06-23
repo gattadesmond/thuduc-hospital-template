@@ -1,0 +1,26 @@
+@import "functions"; // From bootstrap node module
+@import "variables"; // From bootstrap node module
+@import "bootstrap-override/variables-bootstrap";
+@import "bootstrap-override/variables-theme";
+@import "user-variables"; 
+//Import Bootstrap 
+@import "bootstrap-override/bootstrap";
+
+//Style Bootstrap components
+@import "vendor/index";
+@import "vendor/inter"; //Font
+@import "vendor/lunar/lunar"; //Font
+
+@import "user";
+
+@import "style";
+
+@import "components/global";
+@import "components/icons";
+
+@import "pages/home";
+@import "pages/thongtinbacsi";
+
+body, html{
+    font-size: 14px;
+}

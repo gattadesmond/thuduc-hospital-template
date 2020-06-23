@@ -1,0 +1,60 @@
+{% import 'macros/helpers.html' as macro %}
+
+{% extends 'layouts/layout.html' %}
+
+{% block content %}
+
+
+<!-- Home Banner -->
+<!-- https://ld-wt73.template-help.com/tf/velazio/images/home-03-2050x708.jpg -->
+<!-- http://html.iwthemes.com/mas/img/welcome-login.jpg -->
+<!-- https://www.practostatic.com/subscriptions/images/landingpage/dweb-banner.png -->
+<section class="section section-search section-bg h-100" style="background-image: url(http://denticare.bold-themes.com/allen/wp-content/uploads/sites/16/2020/03/background-doctor.jpg)">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 mb-4">
+                <div class="banner-header text-left">
+                    <h1 class="text-primary">Các dịch vụ  của chúng tôi</h1>
+                    <p class="lead text-black-50">
+                        Mang trải nghiệm thăm khám đa khoa hiện đại đến ngay trong ngôi nhà bạn. 
+                    </p>
+                </div>
+            </div>
+        </div>
+   
+
+        <div class="row justify-content-center">
+            {% for item in category %}
+            <div class="col-6 col-md-4 mb-5">
+
+                <div class="function__item h-100">
+                    <a href="" class="link-absolute"></a>
+                    <div class="function__image">
+                        <div class="embed-responsive embed-responsive-21by9 overflow-hidden">
+                            <img src="{{item.image}}" class="embed-responsive-img img-cover" alt="">
+                        </div>
+                    </div>
+               
+
+                    <div class="function__body">
+                        <div class="function__icon">
+                            <img src="img/svg/{{item.icon}}.svg" class="svg-icon fill-current" data-inject-svg alt="">
+                        </div>
+                        <div class="function__title">{{item.name}}</div>
+                        <div class="function__desc">{{item.desc}}</div>
+                    </div>
+
+                </div>
+          
+            </div>
+
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+
+
+
+{% endblock %}
