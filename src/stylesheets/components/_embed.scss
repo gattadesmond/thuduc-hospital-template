@@ -1,0 +1,10 @@
+.embed-responsive-9by16::before {
+  padding-top: percentage(1.1/1);
+}
+
+.embed-responsive-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

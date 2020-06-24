@@ -35,42 +35,75 @@
       }
     }
   },
-  "category" : [
+  "category": [
     {
       "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/NoiKhoa.jpg",
       "name": "Hỏi Bác Sĩ Chuyên khoa",
       "icon": "009-doctor",
       "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
-      "link" : "#"
+      "link": "#"
     },
     {
       "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/healthcare_2.jpg",
       "name": "Xem kết quả xét nghiệm",
       "icon": "027-laboratory",
       "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
-      "link" : "#"
+      "link": "#"
     },
     {
       "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/CanLamSang.jpg",
       "name": "Xem toa thuốc",
       "icon": "017-clipboard",
       "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
-      "link" : "#"
+      "link": "#"
     },
     {
       "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/service/service_6.jpg",
       "name": "Đặt lịch khám bác sĩ",
       "icon": "037-quarantine",
       "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
-      "link" : "#"
+      "link": "#"
     },
     {
       "image": "http://benhvienkhuvucthuduc.vn/Content/assets/img/service/service_3.jpg",
       "name": "Đóng tiền viện phí",
       "icon": "039-bill",
       "desc": "Chúng tôi sẽ trả lời bạn trong 24h",
-      "link" : "#"
+      "link": "#"
     }
-
+  ],
+  "doctor": [
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/a2251380-c296-40a3-84bc-a9d0013f4f6a_leader-1.jpg",
+      "name": "TTUT, TS, BS.Cao Tấn Phước",
+      "hocvi": "Tiến sĩ - Bác sĩ",
+      "chuyenkhoa": "Nội thận - tiết niệu",
+      "chucvu": "Giám đốc",
+      "link": "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/a2b66907-626b-4177-bd44-a9d0013f5fc8_leader-2.jpg",
+      "name": "BS CKII.Nguyễn Trường Thọ",
+      "hocvi": "Bác sĩ Chuyên khoa II",
+      "chuyenkhoa": "Tai Mũi Họng",
+      "chucvu": "Phó Giám đốc",
+      "link": "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/0ae6a047-a8f9-4962-8dc5-a9e60118dabd_leader-3.jpg",
+      "name": "BS CKII.Lê Minh Ký",
+      "hocvi": "Bác sĩ Chuyên khoa II",
+      "chuyenkhoa": "Quản lý y tế",
+      "chucvu": "Phó Giám đốc",
+      "link": "#"
+    },
+    {
+      "image": "http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/274e8730-a616-40be-8790-a9d0011fe2b1_truong-khoa.jpg",
+      "name": "BS CKII.Nguyễn Xuân Quốc",
+      "hocvi": "Bác sĩ Chuyên khoa II",
+      "chuyenkhoa": "Nhi",
+      "chucvu": "Trưởng Khoa",
+      "link": "#"
+    }
   ]
 }

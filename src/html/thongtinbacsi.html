@@ -3,157 +3,91 @@
 {% extends 'layouts/layout.html' %}
 
 {% block content %}
+<div class="bg-image-light ">
 
-<div class="breadcrumb-bar">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-md-8 col-12">
-                <nav aria-label="breadcrumb" class="page-breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Bác sĩ</li>
-                    </ol>
-                </nav>
-                <h2 class="breadcrumb-title">2245 bác sĩ</h2>
+    <section class="section section-space s-heading">
+        <div class="container s-heading-content">
+            <div class="row align-items-center s-heading-height">
+                <div class="col-12 col-lg-8 mb-4">
+                    <div class="banner-header text-left ">
+                        <h1 class="text-primary">Danh sách Bác sĩ</h1>
+                        <p class="lead text-black-50">
+                            Chúng tôi có 234 Bác Sĩ
+                        </p>
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="s-heading-bg w-100" style="background-image: url(img/bv/bg-heading.jpg)">
 
         </div>
-    </div>
-</div>
 
-<section class="section section-space section-bg ttbs-page h-100">
+    </section>
 
-    <!-- <section class="section section-space section-bg ttbs-page h-100"
-    style="background-image: url(http://denticare.bold-themes.com/allen/wp-content/uploads/sites/16/2020/02/about_us_background.jpg)"> -->
-    <!-- Page Content -->
-    <div class="container-fluid">
+    <section class="section section-space pt-0 section-bacsi h-100">
+        <div class="container">
 
-        <div class="row">
-            <div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+            <div class="row justify-content-center">
+                {% for item in range(0,3) %}
+                {% for item in doctor %}
+                <div class="col-6 col-md-3 mb-4">
 
-                <!-- Search Filter -->
-                <div class="card search-filter">
-                    <div class="card-header">
-                        <h4 class="card-title mb-0">Bộ lọc</h4>
+                    <div class="doctor__item h-100">
+                        <div class="doctor__image">
+                            <a href="#" data-toggle="modal" data-target="#modal-bacsi">
+                                <div class="embed-responsive embed-responsive-9by16 overflow-hidden">
+                                    <img src="{{item.image}}" class="embed-responsive-img img-cover" alt="">
+                                </div>
+                            </a>
+                        </div>
+
+
+                        <div class="doctor__body">
+
+                            <div class="doctor__name h5 text-primary">{{item.name}}</div>
+                            <div class="dashed"><span></span></div>
+
+                            <div class="doctor__title">
+                                {{item.chucvu}}
+                            </div>
+
+                            <div class="doctor__meta">
+                                <div class="doctor__meta__item">
+                                    <span>Học vị :</span> {{item.hocvi}}
+                                </div>
+
+                                <div class="doctor__meta__item">
+                                    <span>Chuyên khoa :</span> {{item.chuyenkhoa}}
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="doctor__footer">
+                            <a class="btn btn-block f1" href="doctor-profile.html">
+
+                                <i class="far fa-calendar-alt"></i>
+
+                                Đặt lịch khám</a>
+                            <a class="btn btn-block f2" href="booking.html">
+                                <i class="far fa-question-circle"></i>
+                                Gửi câu hỏi</a>
+                        </div>
+
                     </div>
-                    <div class="card-body">
-                        <div class="filter-widget">
-                            <h4>Giới tính</h4>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="gender_type" checked>
-                                    <span class="checkmark"></span> Bác sĩ Nam
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="gender_type">
-                                    <span class="checkmark"></span> Bác sĩ Nữ
-                                </label>
-                            </div>
-                        </div>
-                        <div class="filter-widget">
-                            <h4>Thuộc chuyên khoa</h4>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist" checked>
-                                    <span class="checkmark"></span> Urology
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist" checked>
-                                    <span class="checkmark"></span> Neurology
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist">
-                                    <span class="checkmark"></span> Dentist
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist">
-                                    <span class="checkmark"></span> Orthopedic
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist">
-                                    <span class="checkmark"></span> Cardiologist
-                                </label>
-                            </div>
-                            <div>
-                                <label class="custom_check">
-                                    <input type="checkbox" name="select_specialist">
-                                    <span class="checkmark"></span> Cardiologist
-                                </label>
-                            </div>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-primary btn-block">Lọc danh sách</button>
-                        </div>
-                    </div>
+
                 </div>
-                <!-- /Search Filter -->
 
-            </div>
-
-            <div class="col-md-12 col-lg-8 col-xl-9">
-                {% for item in range(0,6) %}
-                <!-- Doctor Widget -->
-                <div class="card">
-                    <div class="card-body">
-                        <div class="doctor-widget align-items-end">
-                            <div class="doc-info-left">
-                                <div class="doctor-img">
-                                    <a href="doctor-profile.html">
-                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
-                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
-                                                class="embed-responsive-img " alt="User Image">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="doc-info-cont">
-                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
-                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
-
-                                    <div class="clini-infos">
-                                        <ul>
-                                            <li><span>Học vị : </span>  BS</li>
-                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
-                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doc-info-right ">
-
-                                <div class="clinic-booking">
-                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
-                                        tin Bác sĩ</a>
-                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /Doctor Widget -->
                 {% endfor %}
-
-                <div class="load-more text-center">
-                    <a class="btn btn-primary btn-sm" href="javascript:void(0);">Xem thêm</a>
-                </div>
+                {% endfor %}
             </div>
+
         </div>
+    </section>
 
-    </div>
-    <!-- /Page Content -->
-
-</section>
-
-
+</div>
 
 
 {% endblock %}
