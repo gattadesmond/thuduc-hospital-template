@@ -1,0 +1,727 @@
+
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Describes the encoding of the page to the browser -->
+    <meta charset="utf-8">
+
+    <!-- Sets the title of the page.  Shown in the tab of your browser -->
+    <title>Desmond template</title>
+
+    <!-- Required for Bootstrap's responsive media queries to function -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta tag for basic SEO -->
+    <meta name="description" content="Momo">
+
+    
+
+
+    
+
+    
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+
+
+    <!-- Main Theme CSS styles -->
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+
+    <!-- Font linked from external Google Fonts resource -->
+
+
+</head>
+<body data-smooth-scroll-offset="30" class="Site">
+    <!-- Main Nav Bar -->
+
+    
+
+    
+
+
+    <!-- Header -->
+<header class="header Site-header">
+  <nav class="navbar navbar-expand-lg header-nav">
+    <div class="navbar-header">
+      <a id="mobile_btn" href="javascript:void(0);">
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <a href="index.html" class="navbar-brand logo">
+        <img src="http://benhvienkhuvucthuduc.vn/Content/assets/img/logo.png" class="img-fluid" alt="Logo">
+      </a>
+    </div>
+    <div class="main-menu-wrapper">
+      <div class="menu-header">
+        <a href="index.html" class="menu-logo">
+          <img src="img/logo.png" class="img-fluid" alt="Logo">
+        </a>
+        <a id="menu_close" class="menu-close" href="javascript:void(0);">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="main-nav">
+        <li>
+          <a href="index.html">Trang chủ</a>
+        </li>
+<!-- 
+        <li>
+          <a href="index.html">Giới thiệu</a>
+        </li> -->
+
+
+        <li>
+          <a href="thongtinbacsi.html">Thông tin Bác sĩ</a>
+        </li>
+
+
+
+
+        <li class="has-submenu">
+          <a href="#">Dịch vụ<i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="doctor-dashboard.html">Hỏi Bác sĩ</a></li>
+            <li><a href="appointments.html">Xem kết quả xét nghiệm</a></li>
+            <li><a href="schedule-timings.html">Xem toa thuốc</a></li>
+            <li><a href="my-patients.html">Đặt lịch khám Bác sĩ</a></li>
+            <li><a href="patient-profile.html">Đóng tiền viện phí</a></li>
+          </ul>
+        </li>
+
+
+        <!-- <li class="login-link">
+          <a href="login.html">Login / Signup</a>
+        </li> -->
+      </ul>
+    </div>
+    <ul class="nav header-navbar-rht">
+      <li class="nav-item contact-item">
+        <div class="header-contact-img">
+          <i class="far fa-hospital"></i>
+        </div>
+        <div class="header-contact-detail">
+          <p class="contact-header">Liên hệ</p>
+          <p class="contact-info-header"> <a href="tel: (028) 3722 3556"> (028) 3722 3556</a>
+          </p>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link header-login" href="#" data-toggle="modal" data-target="#modal-login">Đăng nhập </a>
+      </li>
+
+      <!-- User Menu -->
+      <li class="nav-item dropdown has-arrow logged-item">
+        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+          <span class="user-img">
+            <img class="rounded-circle" src="img/doctors/doctor-thumb-02.jpg" width="31" alt="Darren Elder">
+          </span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <div class="user-header">
+            <div class="avatar avatar-sm">
+              <img src="img/doctors/doctor-thumb-02.jpg" alt="User Image" class="avatar-img rounded-circle">
+            </div>
+
+            <div class="user-text">
+              <div><strong>Nguyễn Văn A</strong></div>
+              <p class="text-muted mb-0">Bác sĩ</p>
+            </div>
+          </div>
+          <a class="dropdown-item" href="doctor-dashboard.html">Quản lý</a>
+          <a class="dropdown-item" href="doctor-profile-settings.html">Tùy chọn</a>
+          <a class="dropdown-item" href="login.html">Thoát</a>
+        </div>
+      </li>
+      <!-- /User Menu -->
+    </ul>
+  </nav>
+</header>
+<!-- /Header -->
+
+
+    
+
+    <!-- Main Wrapper -->
+    <div class="Site-content">
+        <!-- Main Body Content -->
+        
+
+<div class="breadcrumb-bar">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-8 col-12">
+                <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Bác sĩ</li>
+                    </ol>
+                </nav>
+                <h2 class="breadcrumb-title">2245 bác sĩ</h2>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="section section-space section-bg ttbs-page h-100">
+
+    <!-- <section class="section section-space section-bg ttbs-page h-100"
+    style="background-image: url(http://denticare.bold-themes.com/allen/wp-content/uploads/sites/16/2020/02/about_us_background.jpg)"> -->
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-12 col-lg-4 col-xl-3 theiaStickySidebar">
+
+                <!-- Search Filter -->
+                <div class="card search-filter">
+                    <div class="card-header">
+                        <h4 class="card-title mb-0">Bộ lọc</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="filter-widget">
+                            <h4>Giới tính</h4>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="gender_type" checked>
+                                    <span class="checkmark"></span> Bác sĩ Nam
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="gender_type">
+                                    <span class="checkmark"></span> Bác sĩ Nữ
+                                </label>
+                            </div>
+                        </div>
+                        <div class="filter-widget">
+                            <h4>Thuộc chuyên khoa</h4>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist" checked>
+                                    <span class="checkmark"></span> Urology
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist" checked>
+                                    <span class="checkmark"></span> Neurology
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist">
+                                    <span class="checkmark"></span> Dentist
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist">
+                                    <span class="checkmark"></span> Orthopedic
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist">
+                                    <span class="checkmark"></span> Cardiologist
+                                </label>
+                            </div>
+                            <div>
+                                <label class="custom_check">
+                                    <input type="checkbox" name="select_specialist">
+                                    <span class="checkmark"></span> Cardiologist
+                                </label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <button type="button" class="btn btn-primary btn-block">Lọc danh sách</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Search Filter -->
+
+            </div>
+
+            <div class="col-md-12 col-lg-8 col-xl-9">
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+                <!-- Doctor Widget -->
+                <div class="card">
+                    <div class="card-body">
+                        <div class="doctor-widget align-items-end">
+                            <div class="doc-info-left">
+                                <div class="doctor-img">
+                                    <a href="doctor-profile.html">
+                                        <div class="embed-responsive embed-responsive-1by1 rounded overflow-hidden">
+                                            <img src="http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/cc4412f0-c7a2-43cd-aee0-a9d0011f980f_truong-khoa.jpg"
+                                                class="embed-responsive-img " alt="User Image">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="doc-info-cont">
+                                    <h4 class="doc-name"><a href="doctor-profile.html">Bs CKI.Nguyễn Thị Bé</a></h4>
+                                    <p class="doc-speciality mt-3 font-weight-bold">Trưởng khoa - Khoa Nội Tiêu hóa</p>
+
+                                    <div class="clini-infos">
+                                        <ul>
+                                            <li><span>Học vị : </span>  BS</li>
+                                            <li><span>Chuyên khoa : </span>  Sản phụ khoa</li>
+                                            <li><span>Chức vụ  : </span>  Bác sĩ điều trị</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="doc-info-right ">
+
+                                <div class="clinic-booking">
+                                    <a class="btn btn-outline-primary btn-block" href="doctor-profile.html">Xem thông
+                                        tin Bác sĩ</a>
+                                    <a class="btn btn-primary btn-block" href="booking.html">Đặt lịch khám</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Doctor Widget -->
+                
+
+                <div class="load-more text-center">
+                    <a class="btn btn-primary btn-sm" href="javascript:void(0);">Xem thêm</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Page Content -->
+
+</section>
+
+
+
+
+
+    </div>
+
+    <div class="Site-footer">
+        <!-- Footer -->
+
+        
+
+
+        
+
+
+        <!-- "Back to top" button -->
+
+        
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Modal -->
+<div class="modal fade   " id="modal-login" tabindex="-1" role="dialog" aria-labelledby="demoModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg  " role="document">
+        <div class="modal-content">
+
+            <div class="container-fluid">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row">
+                    <div class="col-md-6 bg-img rounded-left m-h-60 d-none d-sm-block"
+                        style="background-image: url('http://benhvienkhuvucthuduc.vn/Content/assets/img/healthcare/NoiKhoa.jpg')">
+
+                    </div>
+                    <div class="col-md-6 py-5 px-sm-5 my-auto ">
+
+                        <h3 class="pt-sm-3 mb-5">Đăng nhập hệ thống</h2>
+                            <!-- <p class="text-muted">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p> -->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Tên đăng nhập</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Tên đăng nhập">
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Mật khẩu">
+
+                                </div>
+
+                                <div class="form-check">
+                                    <label>
+                                        <label class="form-check-label" for="RememberMe"><input class="form-check-input"
+                                                data-val="true"
+                                                data-val-required="The Ghi nhớ đăng nhập ? field is required."
+                                                id="RememberMe" name="RememberMe" type="checkbox" value="true"><input
+                                                name="RememberMe" type="hidden" value="false">Ghi nhớ đăng nhập
+                                            ?</label>
+                                        <span class="field-validation-valid" data-valmsg-for="RememberMe"
+                                            data-valmsg-replace="true"></span>
+
+                                    </label>
+
+
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block  mt-4" data-dismiss="modal"
+                                    aria-label="Close">Đăng nhập</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Ends -->
+
+
+<!-- Modal -->
+<div class="modal fade " id="modal-bacsi" tabindex="-1" role="dialog" aria-labelledby="demoModal" aria-hidden="true">
+    <div class="modal-dialog  modal-lg modal-dialog-centered " role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 bg-img d-none d-sm-flex align-items-end"
+                        style="background-image: url('http://benhvienkhuvucthuduc.vn/Content/uploads/ImageDoctors/a2b66907-626b-4177-bd44-a9d0013f5fc8_leader-2.jpg')">
+
+                    </div>
+                    <div class="col-md-6 py-5 px-sm-5 " style="background-color: rgba(242, 242, 242, 1);">
+                        <h3>BS CKII.Nguyễn Trường Thọ</h3>
+
+                        <div class="dashed"><span></span></div>
+
+                        <div class="doctor__title">
+                            Phó Giám đốc
+                        </div>
+
+                        <div class="doctor__meta">
+                            <div class="doctor__meta__item">
+                                <span>Học vị :</span> Bác sĩ Chuyên khoa II
+                            </div>
+
+                            <div class="doctor__meta__item">
+                                <span>Chuyên khoa :</span> Tai Mũi Họng
+                            </div>
+                        </div>
+
+
+                        <div class="doctor__footer p-0 mt-4">
+                            <a class="btn btn-block f1" href="doctor-profile.html">
+
+                                <i class="far fa-calendar-alt"></i>
+
+                                Đặt lịch khám</a>
+                            <a class="btn btn-block f2" href="booking.html">
+                                <i class="far fa-question-circle"></i>
+                                Gửi câu hỏi</a>
+                        </div>
+
+                        <div class="mt-5">
+                            <strong>Quá trình công tác :</strong>
+
+                            <ul class="list-unstyled mt-2">
+                                <li>Loẻm iplsum doalr fdwijdwj djwojd oid ưa</li>
+                                <li>Loẻm iplsum doalr fdwijdwj djwojd oid ưa</li>
+                                <li>Loẻm iplsum doalr fdwijdwj djwojd oid ưa</li>
+                                <li>Loẻm iplsum doalr fdwijdwj djwojd oid ưa</li>
+                                <li>Loẻm iplsum doalr fdwijdwj djwojd oid ưa</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Modal Ends -->
+
+
+    <!-- Required vendor scripts (Do not remove) -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <!-- <script type="text/javascript" src="js/lazysizes.min.js"></script> -->
+
+    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
+
+    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
+    <script type="text/javascript" src="js/aos.js"></script>
+
+    <!-- Clipboard (copies content from browser into OS clipboard) -->
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+
+
+    <!-- Flatpickr (calendar/date/time picker UI) -->
+    <script type="text/javascript" src="js/flatpickr.min.js"></script>
+
+
+
+    <!-- jQuery Countdown (displays countdown text to a specified date) -->
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+
+    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
+    <script type="text/javascript" src="js/plyr.polyfilled.min.js"></script>
+
+
+    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
+    <script type="text/javascript" src="js/scrollMonitor.js"></script>
+
+    <!-- Smooth scroll (animation to links in-page)-->
+    <script type="text/javascript" src="js/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
+    <script type="text/javascript" src="js/svg-injector.umd.production.js"></script>
+
+    <!-- Typed text (animated typing effect)-->
+    <script type="text/javascript" src="js/typed.min.js"></script>
+
+
+    <!-- Required theme scripts (Do not remove) -->
+    <script type="text/javascript" src="js/theme.js"></script>
+
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+    <!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquerypp.custom.js"></script> -->
+    <!-- <script type="text/javascript" src="js/jquery.bookblock.js"></script> -->
+
+    <!-- <script type="text/javascript" src="js/custom.js"></script> -->
+
+    <!-- Scripts -->
+    	<!-- Sticky Sidebar JS -->
+        <script src="plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+        <script src="plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    
+
+    
+
+
+
+    </body>
+
+</html>
