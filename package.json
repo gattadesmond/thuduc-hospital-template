@@ -82,7 +82,7 @@
     "jquery": "~3.5.1",
     "jquery-countdown": "~2.2.0",
     "lazysizes": "^5.2.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "plyr": "~3.6.2",
     "popper.js": "^1.16.1",
     "prismjs": "~1.20.0",
